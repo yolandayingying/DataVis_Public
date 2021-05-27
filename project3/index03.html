@@ -342,7 +342,7 @@
             backgroundColor: '#7A7788',
 
             title: {
-              text: "Total CO2 Emissions",
+              text: "Total CO2e Emissions",
               x: "center",
               textStyle: {
                 color: "#FFFFFF",
@@ -353,7 +353,7 @@
               show: true,
               trigger: "axis",
               formatter(params) {
-                return `<div>${params[0].name}: ${params[0].value} kt</div>`;
+                return `<div>${params[0].name}: ${params[0].value} Mt</div>`;
               },
             },
             grid: {
@@ -371,7 +371,7 @@
             },
             yAxis: {
               type: "value",
-              name: "kt",
+              name: "Mt",
             },
             series: [
               {
